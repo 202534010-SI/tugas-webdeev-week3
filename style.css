@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+   --color-primary: #1d4ed8;
+    --color-text: #1f2937;
+    --color-muted: #4b5563;
+    --color-surface: #ffffff;
+    --color-border: #d1d5db;
+    --color-focus: #f59e0b;
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --radius: 0.5rem;
+}
+body {
+    margin: 0;
+    color: var(--color-text);
+    background: #f8fafc;
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+}
+
+header,
+main,
+footer {
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;
+}
+
+main {
+    padding-block: var(--space-3);
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+p {
+    max-width: 65ch;
+}
+.nav-link {
+    color: var(--color-primary);
+    padding: var(--space-1);
+    text-underline-offset: 0.2em;
+}
+
+.nav-link:hover {
+    text-decoration-thickness: 0.15em;
+}
+
+.nav-link:active {
+    color: #1e3a8a;
+}
+
+.nav-link:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 3px;
+}
+.card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--space-2);
+    margin-block-end: var(--space-2);
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: var(--space-1);
+    border: 1px solid var(--color-border);
+    text-align: start;
+}
+
+label {
+    display: block;
+    margin-block-start: var(--space-2);
+    font-weight: 600;
+}
+
+input,
+textarea,
+button {
+    font: inherit;
+}
+
+input,
+textarea {
+    width: 100%;
+    max-width: 32rem;
+    padding: 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.25rem;
+}
+
+button {
+    margin-block-start: var(--space-2);
+    padding: 0.75rem 1rem;
+    color: #ffffff;
+    background: var(--color-primary);
+    border: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 3px;
+}

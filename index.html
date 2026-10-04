@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Universitas Widya Karya Malang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>BEM Universitas Widya Karya Malang</h1>
+
+    <nav aria-label="Navigasi utama">
+        <a href="#tentang" class="nav-link">Tentang BEM</a>
+        <a href="#kementerian" class="nav-link">Kementerian</a>
+        <a href="#kegiatan" class="nav-link">Kegiatan</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+    </nav>
+    </header>
+
+    <main>
+
+        <article id="tentang" class="card">
+            <h2>Tentang BEM</h2>
+
+            <p>
+                BEM Universitas Widya Karya Malang merupakan organisasi
+                mahasiswa yang menjadi wadah untuk menjalankan kegiatan
+                mahasiswa dan organisasi di lingkungan kampus.
+            </p>
+
+            <p>
+                Pada periode ini, BEM Universitas Widya Karya Malang
+                menggunakan nama Kabinet Ekaswara.
+            </p>
+
+            <img src="image_m3/kabinetekaswara.jpg"
+                alt="Kabinet Ekaswara">
+        </article>
+
+        <section id="kementerian" class="card">
+            <h2>Kementerian</h2>
+
+            <p>
+                Kabinet Ekaswara memiliki beberapa kementerian, yaitu:
+            </p>
+
+            <ul>
+                <li>Kemensesnet</li>
+                <li>Kemenkeu</li>
+                <li>Kemendikbud</li>
+                <li>Kemenkotif</li>
+                <li>PSDM</li>
+                <li>Dalugri</li>
+                <li>Kastrat</li>
+                <li>Kominfo</li>
+            </ul>
+        </section>
+
+        <section id="kegiatan" class="card">
+            <h2>Kegiatan BEM</h2>
+
+            <p>
+                BEM menjalankan berbagai kegiatan yang berkaitan dengan
+                mahasiswa dan lingkungan kampus.
+            </p>
+
+            <p>
+                Kegiatan tersebut dapat berupa program kerja, kegiatan
+                mahasiswa, dan kegiatan organisasi lainnya.
+            </p>
+        </section>
+
+        <section id="kontak" class="card">
+            <h2>Kontak</h2>
+
+            <form action="#" method="get">
+
+                <div>
+                    <label for="nama">Nama lengkap</label>
+                    <input id="nama"
+                           name="nama"
+                           type="text"
+                           autocomplete="name"
+                           required>
+                </div>
+
+                <div>
+                    <label for="email">Alamat email</label>
+                    <input id="email"
+                           name="email"
+                           type="email"
+                           autocomplete="email"
+                           required>
+                </div>
+
+                <div>
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan"
+                              name="pesan"
+                              minlength="10"
+                              required></textarea>
+                </div>
+
+                <button type="submit" aria-label="Kirim pesan">Kirim pesan</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>BEM Universitas Widya Karya Malang - Kabinet Ekaswara</p>
+    </footer>
+
+</body>
+</html>
